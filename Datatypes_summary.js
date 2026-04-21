@@ -9,27 +9,51 @@
 //Symbol
 const id = Symbol("123"); //typeof Symbol
 const anotherId = Symbol("123"); //typeof Symbol
-console.log(id === anotherId); 
+console.log(id === anotherId);
 
 //BigInt
 const bigNumber = 657876876976576588767n;
-console.log(typeof bigNumber);  //bigInt
+console.log(typeof bigNumber); //bigInt
 
 //Non Primitive (call by reference (memory k reference directly allocate kar diya jata ha))
 //types:Array,Objects,Functions
 //Array
-const heros = ["sara", "laiba", "humza", "afnan", "zaima"];  //typeof object
+const heros = ["sara", "laiba", "humza", "afnan", "zaima"]; //typeof object
 
 //Object
-let myObj = {      ////typeof object
+let myObj = {
+  ////typeof object
   name: "sara",
   age: 22,
 };
 //Function
-const myFunction = function () {  //typeof function
+const myFunction = function () {
+  //typeof function
   console.log("hello world");
 };
 console.log(typeof myFunction);
 
 //Javascript static type language ha ya dynamic type language?
 // Answer: Dynamic type language
+
+//****************************************************************************************************
+//Humary pass 2 types ki memory hain:
+//1.Stack(primitive) original value ki copy milti ha
+//2.Heap(non-primitive) original value k reference milta ha
+
+//Stack Example 
+let myYoutubename = "saradotcom";
+let anothername = myYoutubename;
+// anothername = "myYoutubeChannel";
+// console.log(myYoutubename);
+console.log(anothername);
+
+//Heap Example
+let userOne = {
+  email: "saraashfaqgmail.com",
+  pass: 123,
+};
+let userTwo = userOne;
+userTwo.email = "sara@gmail.com";
+console.log(userOne.email);
+console.log(userTwo.email);
