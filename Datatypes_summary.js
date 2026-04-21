@@ -41,12 +41,12 @@ console.log(typeof myFunction);
 //1.Stack(primitive) original value ki copy milti ha
 //2.Heap(non-primitive) original value k reference milta ha
 
-//Stack Example 
+//Stack Example
 let myYoutubename = "saradotcom";
 let anothername = myYoutubename;
-// anothername = "myYoutubeChannel";
-// console.log(myYoutubename);
-console.log(anothername);
+anothername = "myYoutubeChannel";
+console.log(myYoutubename); //saradotcom
+console.log(anothername); //myYoutubeChannel
 
 //Heap Example
 let userOne = {
@@ -55,5 +55,5 @@ let userOne = {
 };
 let userTwo = userOne;
 userTwo.email = "sara@gmail.com";
-console.log(userOne.email);
-console.log(userTwo.email);
+console.log(userOne.email); //sara@gmail.com
+console.log(userTwo.email); //sara@gmail.com
