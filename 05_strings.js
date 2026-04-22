@@ -66,7 +66,7 @@ console.log(str1.concat(" ",str2," ","sara"));
 //bold(Text ko HTML bold bana deta hai.) don't use
 //constructor(Yeh batata hai ke object kis type ka hai.)
 //endsWith(Check karta hai ke string kisi specific word pe end hoti hai ya nahi.)
-//fixed(Text ko fixed-width font me convert karta hai (HTML tag <tt>)) don't use
+//fixed(Text ko fixed-width font me convert karta hai (HTML tag <tt>)) 
 
 
 
