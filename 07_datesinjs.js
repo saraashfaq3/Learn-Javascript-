@@ -24,7 +24,7 @@ console.log(date.toLocaleString()); //1/14/2023, 12:00:00 AM
 //Timestamp
 let myTimeStamp = Date.now();
 console.log(myTimeStamp);
-console.log(myYYDDMM.getTime());
+console.log(myYYDDMM.getTime()); //
 console.log(Math.floor(Date.now() / 1000));  //convert into second
 
 //single single date chahiye like sirf month,sirf year,sirf date
