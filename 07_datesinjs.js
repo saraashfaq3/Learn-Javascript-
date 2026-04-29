@@ -34,4 +34,11 @@ console.log(singleDate.getMonth());  //3->April //javascript mein month 0 se sta
 console.log(singleDate.getMonth()+1);  //4->may
 console.log(singleDate.getDay());  //2
 
+//String Interpolatation
+//`${singleDate.getDay()} and the time `
+
+//
+singleDate.toLocaleString('default', {
+    weekday:"long"
+})
 
