@@ -57,16 +57,44 @@ const users = [
   },
 ];
 //first user k email access karna ha
-(users[0].email)
-console.log(tinderusers);  //{ id: '123abc', name: 'sara', isLoggedIn: false }
-console.log(Object.keys(tinderusers));  //[ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderusers));  //[ '123abc', 'sara', false ]
-console.log(Object.entries(tinderusers));  //[ [ 'id', '123abc' ], [ 'name', 'sara' ], [ 'isLoggedIn', false ] ]
+users[0].email;
+console.log(tinderusers); //{ id: '123abc', name: 'sara', isLoggedIn: false }
+console.log(Object.keys(tinderusers)); //[ 'id', 'name', 'isLoggedIn' ]
+console.log(Object.values(tinderusers)); //[ '123abc', 'sara', false ]
+console.log(Object.entries(tinderusers)); //[ [ 'id', '123abc' ], [ 'name', 'sara' ], [ 'isLoggedIn', false ] ]
 
 //objects k andar pura loop through kar rahy ha or phir aik pura value nikaal rahy hain to value nikalty
 //time kai baar vo value exist hi nahi karti to agar value exixt hi nahi karti to crash hony k chances
 //hain to ya manual us ko dekho ya phir us se pouch lo k kiya ap k pass ya value ha.
-console.log(tinderusers.hasOwnProperty('isLoggedIn'));
+console.log(tinderusers.hasOwnProperty("isLoggedIn"));
 
+//Destructuring of array & objects know we discuss about destructuring of object.(important)
+const course = {
+  coursename: "javascript",
+  price: "999",
+  courseInstructor: "sara",
+};
+// course.courseInstructor
+//bar bar course.courseInstructor likhny se acha ha k ya syntax use karo
+const{courseInstructor:hi}=course
+console.log(hi); //sara
 
+//API
+//object format mein api
+//JSON se api call hoti ha to kasa nazar ata ha
+// {
+//   "name":"sara",
+//   "coursename":"javascript",
+//   "price":"free"
 
+// }
+
+//array format mein api 
+[
+  {},
+  {},
+  {}
+]
+
+//randomuserme famous api
+//json formatter tool per hum apna khud k api bhi create kar sakty
