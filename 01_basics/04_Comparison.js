@@ -11,9 +11,9 @@ console.log("02">1);
 
 //null conversion
 //Avoid null & undefined conversion
-console.log(null>0);
-console.log(null==0);
-console.log(null>=0);
+console.log(null>0); //false
+console.log(null==0); //false
+console.log(null>=0); //true
 
 //the reason is that an equality check == and comparisons > < >= <= work differently.Comparison 
 // convert null to a number ,treating it as 0. Thats why (3) null is true and (1) null>0 is false.
@@ -26,8 +26,8 @@ console.log(undefined<0);
 
 //strick check === 
 // (values ko check karny k sath sath,strickly check bhi karta ha === ki help se )
-console.log("2"==2);  //check
-console.log("2"===2);  //strickly check
+console.log("2"==2);  //check  //true
+console.log("2"===2);  //strickly check  //false
 
 
 

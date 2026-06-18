@@ -6,10 +6,15 @@
 //7 types: string ,Number,Boolean,null,undefined,Symbol(kisi bhi value ko unique banany k liye symbol
 //  use hota ha),BigInt
 
+const score=100
+const scoreValue=100.3
+const isLoggedIn=false
+const outsideTemp=null
+let userEmail;
 //Symbol
 const id = Symbol("123"); //typeof Symbol
 const anotherId = Symbol("123"); //typeof Symbol
-console.log(id === anotherId);
+console.log(id === anotherId); //false
 
 //BigInt
 const bigNumber = 657876876976576588767n;
